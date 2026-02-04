@@ -296,3 +296,19 @@ sent 178 bytes  received 20 bytes  2907 bytes/sec
 total size is 11694  speedup is 59.06
 [2026-02-05 04:00:07] 同步完成
 [2026-02-05 05:00:00] 本地提交...
+[main 797620d] sync: 2026-02-05 05:00
+ 1 file changed, 16 insertions(+)
+[2026-02-05 05:00:01] 本地推送失败（可能没有新提交）
+[2026-02-05 05:00:01] 同步硅谷服务器 (Git)...
+HEAD is now at a53e2fe 📔 2026-02-04 日记：记忆共享架构 & Token 事故教训
+[2026-02-05 05:00:04] 同步北京服务器 (rsync)...
+Transfer starting: 5 files
+
+sent 224 bytes  received 20 bytes  3806 bytes/sec
+total size is 18864  speedup is 77.31
+Transfer starting: 4 files
+
+sent 178 bytes  received 20 bytes  3188 bytes/sec
+total size is 11694  speedup is 59.06
+[2026-02-05 05:00:06] 同步完成
+[2026-02-05 06:00:00] 本地提交...
