@@ -68,6 +68,17 @@
 - 不确定后果的新配置，先小规模测试
 - cron 任务优先使用 `sessionTarget: main` 复用主 session
 
+### 2026-02-04：小九配额耗尽事故
+
+**事件**：小九的一个过期"测试发送"任务，配置了 `wakeMode: next-heartbeat`，但 QQ 发送一直失败（Outbound not configured）。每次 heartbeat 都重试，失败时调用 LLM 生成错误响应，把 Google Antigravity 的 Claude 配额耗尽。
+
+**根因**：过期的一次性任务没有删除，且失败重试机制消耗了 LLM 配额。
+
+**教训**：
+- 一次性任务（`schedule.kind: at`）执行后应该删除或禁用
+- 失败的任务要及时清理，避免无限重试
+- `wakeMode: next-heartbeat` 的任务如果持续失败，会不断消耗资源
+
 ---
 
 ## 待办
