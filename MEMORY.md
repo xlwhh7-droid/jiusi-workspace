@@ -55,6 +55,21 @@
 
 ---
 
+## 教训
+
+### 2026-02-04：小八 Token 事故
+
+**事件**：配置 cron 任务时使用 `sessionTarget: isolated` + `wakeMode: next-heartbeat`，导致一天创建 23,636 个 session，消耗 4600 万 tokens，烧掉 ¥10。
+
+**根因**：没有充分评估配置组合的连锁反应，直接执行了高风险操作。
+
+**教训**：
+- 涉及费用、重复执行、外部发送、删除修改的任务，先向大哥说明风险
+- 不确定后果的新配置，先小规模测试
+- cron 任务优先使用 `sessionTarget: main` 复用主 session
+
+---
+
 ## 待办
 
 - [ ] 2月3日重试 Moltbook 认领
