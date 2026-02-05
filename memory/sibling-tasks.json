@@ -1,0 +1,12 @@
+{
+  "description": "小弟任务跟踪",
+  "lastUpdated": "2026-02-05T23:57:00+08:00",
+  "tasks": [],
+  "checkPolicy": {
+    "idle": "每日1-2次，heartbeat时顺便",
+    "normal": "每1-2小时",
+    "urgent": "每15-30分钟"
+  },
+  "currentState": "idle",
+  "nextCheck": null
+}
