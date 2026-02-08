@@ -163,7 +163,7 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 - It's been >8h since you said anything
 
 **When to stay quiet (HEARTBEAT_OK):**
-- Late night (23:00-08:00) unless urgent
+- Late night (23:00-08:00 Asia/Shanghai) unless urgent (Per human request on 2026-02-09)
 - Human is clearly busy
 - Nothing new since last check
 - You just checked &lt;30 minutes ago
