@@ -1,12 +1,27 @@
 {
   "description": "小弟任务跟踪",
-  "lastUpdated": "2026-02-05T23:57:00+08:00",
-  "tasks": [],
+  "lastUpdated": "2026-02-08T18:18:00+08:00",
+  "tasks": [
+    {
+      "id": "update-sibling-7",
+      "sibling": "小七",
+      "type": "update",
+      "status": "completed",
+      "startTime": 1739009800
+    },
+    {
+      "id": "update-sibling-8",
+      "sibling": "小八",
+      "type": "update",
+      "status": "completed",
+      "startTime": 1739009800
+    }
+  ],
   "checkPolicy": {
     "idle": "每日1-2次，heartbeat时顺便",
     "normal": "每1-2小时",
     "urgent": "每15-30分钟"
   },
   "currentState": "idle",
-  "nextCheck": null
+  "nextCheck": 1739010700
 }
