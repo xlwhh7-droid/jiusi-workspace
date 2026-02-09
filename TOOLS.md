@@ -22,6 +22,17 @@
 - **定位**：国内新闻、本土事务
 - **默认模型**：xiaomi/mimo-v2-flash
 
+### 安卓节点 📱 (Pixel 6 Pro)
+- **角色**：移动端/本地网关
+- **局域网 IP**：192.168.50.89
+- **ADB ID**: `1A281FDEE0015U`
+- **Token**: `phone6pro2026`
+- **远程连接 (Mac)**:
+  - 端口转发: `adb forward tcp:28789 tcp:18789`
+  - 访问地址: `http://localhost:28789/?token=phone6pro2026`
+  - 调试转发: `adb forward tcp:9224 localabstract:chrome_devtools_remote`
+- **启动脚本**: `/sdcard/start_gw.sh`
+
 ### 我 — 九思 ⚡（主节点）
 - **角色**：老大，管理、协调、直接服务大哥
 - **位置**：大哥 MacBook Pro

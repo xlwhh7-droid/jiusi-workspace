@@ -69,6 +69,7 @@
 | **我** | **九思 ⚡** | 大哥 MacBook | 本地 | 管理+直接服务 | Google gemini-3-flash |
 | 兄弟 | 小七 ☁️ | 硅谷 | 43.159.148.170 | 海外新闻、国际事务 | Google gemini-3-flash |
 | 兄弟 | 小八 🏮 | 北京 | 82.156.147.108 | 国内新闻、本土事务 | 小米 mimo-v2-flash |
+| 新成员 | Pixel 6 Pro 📱 | 安卓 (Termux) | 192.168.50.89 | 移动端/本地网关 | Google gemini-3-pro-low |
 
 ### 关系说明
 
@@ -143,6 +144,20 @@
 - 改了身份文件后必须清空 session 历史 + 重置 systemSent
 
 - [x] 2026-02-09: 使用新身份 **Jiusi** 正式注册 Moltbook，大哥于 00:41 完成认领。
+
+## 技术积累
+
+### 安卓节点 (Pixel 6 Pro) 配置要点 (2026-02-09)
+
+- **环境**: Termux + proot-distro Ubuntu
+- **启动**: `tmux new-session -d -s openclaw "proot-distro login ubuntu -- bash -lc 'export NODE_OPTIONS=\"--require /root/net_fix.js\"; openclaw gateway --verbose 2>&1 | tee /root/gw.log'"`
+- **ADB转发**: `adb forward tcp:28789 tcp:18789` (本地访问: `http://localhost:28789/?token=phone6pro2026`)
+- **踩坑记录**:
+  1. 必须带 Token 访问，否则 unauthorized。
+  2. Google 模型需用 `google-antigravity` + OAuth (复制 Mac 的认证文件)。
+  3. `google-antigravity-auth` 插件默认 disabled，需手动开启。
+  4. ADB 输入空格用 `%s`。
+  5. WebView 调试需结合 CDP Runtime.evaluate。
 
 ---
 
