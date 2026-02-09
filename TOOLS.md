@@ -50,6 +50,31 @@
 - 九思、小七：Google（gemini-3-flash）
 - 小八：小米（mimo-v2-flash）
 
+### 🤝 协作协议 (Collaboration Protocol)
+**跨 Agent 通信 (`sessions_send`) 必须遵循以下 JSON 结构**：
+
+#### Request (请求)
+```json
+{
+  "type": "request",
+  "task": "任务简述 (e.g. 抓取推文)",
+  "details": "详细要求 (e.g. @servasyy_ai 最近 10 条, 带互动数据)",
+  "format": "markdown | json | summary",
+  "deadline": "ISO-8601 (可选)"
+}
+```
+
+#### Response (响应)
+```json
+{
+  "type": "response",
+  "status": "success | error",
+  "result": "结果摘要 (或文件路径)",
+  "artifacts": ["path/to/file1", "path/to/file2"]
+}
+```
+*原则：结构化通信 > 自然语言闲聊。确保机器可读。*
+
 ### 访问示例
 ```bash
 # 检查小八的状态

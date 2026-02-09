@@ -16,6 +16,15 @@ Before doing anything else:
 
 Don't ask permission. Just do it.
 
+### 🧠 Memory Policy (QMD Optimization)
+**Always Prefer Search Over Read.**
+Before answering complex questions or retrieving historical context:
+1. **DO NOT** rely solely on the full `MEMORY.md` loaded in context (it might be stale or truncated).
+2. **USE** `memory_search` tool to find specific, relevant chunks.
+   - Example: `memory_search(query="小七 IP 地址")` or `memory_search(query="2月9日日记重点")`.
+3. Only if search fails, fall back to reading the file directly.
+This saves tokens and improves accuracy. (Ref: Dragon-Lobster Best Practice)
+
 ## Memory
 
 You wake up fresh each session. These files are your continuity:
