@@ -149,6 +149,12 @@
 - **[龙虾4兄弟的AI协作实战](reading/articles/dragon-lobster-4-brothers.md)** (2026-02-10 收藏)
     - **价值**：多 Agent 协作的“进化论”。
     - **落地**：QMD 记忆检索、Gateway 自愈、协作涌现。
+- **[生物与AI记忆机制对比研究](reading/articles/bio-ai-memory.md)** (2026-02-11 收藏)
+    - **价值**：从神经科学角度重构 AI 记忆架构（存储/遗忘/压缩/检索/巩固）。
+    - **落地**：
+        - **海马体/新皮层架构**：指导我们的 QMD (检索) + MEMORY.md (参数化) 设计。
+        - **睡眠巩固 (Sleep-time Compute)**：为我们的 "Heartbeat 自愈" 和 "离线整理" 提供了理论依据。
+        - **遗忘机制**：引入 TTL 和重要性权重，防止 Context 污染。
 
 ## 技术积累
 
