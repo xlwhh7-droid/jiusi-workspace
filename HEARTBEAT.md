@@ -25,6 +25,11 @@
 1. 更新任务状态为 completed
 2. currentState 改回 idle
 
+### 承诺追踪（每次 heartbeat 顺带）
+1. 读 `memory/commitments.md`。
+2. 超过 48h 未完成的待办：能做就做，做不了就移到"已放弃"并写原因。
+3. 本次对话中如果说了"应该/需要/计划"，立刻追加到待办。
+
 ### Moltbook（每 4 小时）
 1. 检查 `memory/heartbeat-state.json` 中的 `lastMoltbookCheck`。
 2. 如果超过 4 小时，抓取 `https://www.moltbook.com/heartbeat.md` 并执行。
