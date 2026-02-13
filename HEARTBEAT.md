@@ -38,7 +38,7 @@
 ### 系统自愈（每 10 次 Heartbeat）
 **约 10 小时检查一次**：
 1. **Gateway 状态**：`openclaw gateway status`，异常则 `openclaw gateway restart`。
-2. **兄弟连通性**：`nodes` 工具列出节点。失联超 24 小时记录到 `memory/anomalies.log` 并提醒大哥。
+2. **兄弟连通性**：执行 `scripts/check-siblings.sh` 通过 SSH 检查小七和小八。注意：`openclaw nodes` 是本地设备配对（手机等），**不是**兄弟节点。失联超 24 小时记录到 `memory/anomalies.log` 并提醒大哥。
 3. **Session 健康**：检查 `~/.openclaw/logs/gateway.err.log` 尾部 20 行，有 "session locked" 或 "crash" 则记录。
 
 ## 小弟信息
