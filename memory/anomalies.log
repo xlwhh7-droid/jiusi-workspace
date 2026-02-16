@@ -3,7 +3,8 @@
 2026-02-12T09:00:35+08:00 [WARN] Nodes list still empty. Gateway running but no nodes connected.
 2026-02-12T14:00:35+08:00 [CRITICAL] Nodes still disconnected (6+ hours).
 2026-02-12T18:00:35+08:00 [CRITICAL] Nodes still disconnected (12+ hours). Immediate intervention required.
-System check completed at Thu Feb 12 22:26:31 CST 2026
+2026-02-16 13:09:00+08:00 [ERROR] 小七 npm 升级失败：GitHub 连接超时。openclaw 包损坏。
+System check completed at Mon Feb 16 13:09:00 CST 2026
 2026-02-12T23:25:31+08:00 [CRITICAL] Nodes still disconnected (17+ hours). Manual intervention or script needed.
 2026-02-13T05:04:31+08:00 [CRITICAL] Nodes still disconnected (23+ hours). Restarted remote gateways, but nodes list remains empty. Local logs show network fetch failures.
 2026-02-13T07:08:00+08:00 [CRITICAL] Nodes missing from local `paired.json`. SSH connectivity confirmed OK, remote Gateways running, but NO PEERING exists. Re-pairing required.
