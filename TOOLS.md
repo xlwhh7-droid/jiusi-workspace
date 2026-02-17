@@ -53,7 +53,7 @@
 ### 外部 API
 
 #### Perplexity API
-- **Key**: `已配置在 openclaw.json 中`
+- **Key**: 已配置在 `openclaw.json` 的 `tools.web.search` 中，不在此处明文存储
 
 ---
 
