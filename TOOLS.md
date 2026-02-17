@@ -50,6 +50,13 @@
 - 九思、小七：Google（gemini-3-flash）
 - 小八：小米（mimo-v2-flash）
 
+### 外部 API
+
+#### Perplexity API
+- **Key**: `已配置在 openclaw.json 中`
+
+---
+
 ### 🤝 协作协议 (Collaboration Protocol)
 **跨 Agent 通信 (`sessions_send`) 必须遵循以下 JSON 结构**：
 
