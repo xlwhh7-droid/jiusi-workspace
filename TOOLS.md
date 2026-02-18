@@ -10,7 +10,7 @@
 - **Node 环境**：fnm，需要 `export PATH="$HOME/.local/share/fnm:$PATH"; eval "$(fnm env --shell bash)"`
 - **联系方式**：Telegram / QQ 机器人
 - **定位**：海外新闻、国际事务
-- **默认模型**：google-antigravity/gemini-3-flash
+- **默认模型**：xiaomi/mimo-v2-flash
 
 ### 小八 🏮（北京）
 - **角色**：国内事务专员
@@ -37,7 +37,7 @@
 - **角色**：老大，管理、协调、直接服务大哥
 - **位置**：大哥 MacBook Pro
 - **QQ AppID**: `102840758`（QQ 平台名：九思 ⚡）
-- **默认模型**：google-antigravity/gemini-3-flash
+- **默认模型**：minimax/MiniMax-M2.5
 
 ---
 
@@ -47,8 +47,7 @@
 
 ### 模型规则
 - **未经大哥明确同意，不得修改任何人的大语言模型配置**
-- 九思、小七：Google（gemini-3-flash）
-- 小八：小米（mimo-v2-flash）
+- 九思、小七、小八：MiniMax（MiniMax-M2.5）
 
 ### 外部 API
 
