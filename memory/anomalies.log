@@ -1,10 +1,13 @@
-2026-02-11T04:26:40+08:00 [ERROR] Moltbook Check Failed: API Key missing.
-2026-02-12T05:57:15+08:00 [WARN] Nodes list empty. Possible pairing loss.
-2026-02-12T09:00:35+08:00 [WARN] Nodes list still empty. Gateway running but no nodes connected.
-2026-02-12T14:00:35+08:00 [CRITICAL] Nodes still disconnected (6+ hours).
-2026-02-12T18:00:35+08:00 [CRITICAL] Nodes still disconnected (12+ hours). Immediate intervention required.
-2026-02-16 13:09:00+08:00 [ERROR] 小七 npm 升级失败：GitHub 连接超时。openclaw 包损坏。
-System check completed at Mon Feb 16 13:09:00 CST 2026
-2026-02-12T23:25:31+08:00 [CRITICAL] Nodes still disconnected (17+ hours). Manual intervention or script needed.
-2026-02-13T05:04:31+08:00 [CRITICAL] Nodes still disconnected (23+ hours). Restarted remote gateways, but nodes list remains empty. Local logs show network fetch failures.
-2026-02-13T07:08:00+08:00 [CRITICAL] Nodes missing from local `paired.json`. SSH connectivity confirmed OK, remote Gateways running, but NO PEERING exists. Re-pairing required.
+# 异常日志
+
+## 2026-02-18 07:00
+
+### [ESCALATE] 小七节点失联
+
+- **状态**: SSH 可达，OpenClaw 不可用
+- **症状**: `openclaw: command not found` - node 环境问题
+- **检查**: `which node` 返回空
+- **上次正常**: 2月12日
+- **建议**: 远程检查 fnm 安装或重装 OpenClaw
+
+---
