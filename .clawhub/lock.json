@@ -4,6 +4,22 @@
     "moltbook-2": {
       "version": "0.1.0",
       "installedAt": 1771302834738
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1772122860857
+    },
+    "tmux": {
+      "version": "1.0.0",
+      "installedAt": 1772122867063
+    },
+    "nano-pdf": {
+      "version": "1.0.0",
+      "installedAt": 1772122875026
+    },
+    "browserwing": {
+      "version": "1.0.0",
+      "installedAt": 1772163681373
     }
   }
 }
